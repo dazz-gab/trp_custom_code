@@ -1,0 +1,19 @@
+name: trp_custom_code
+description: A starting point for Dart libraries or applications.
+version: 1.0.0
+repository: https://github.com/phydrogen/trp_custom_code
+
+environment:
+  sdk: ^3.6.0-149.3.beta
+
+# Add regular dependencies here.
+dependencies:
+  flutter:
+    sdk: flutter
+  dropdown_button2: ^2.3.9
+  google_fonts: ^6.2.1
+  # path: ^1.8.0
+
+dev_dependencies:
+  lints: ^4.0.0
+  test: ^1.24.0

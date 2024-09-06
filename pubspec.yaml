@@ -1,6 +1,6 @@
 name: trp_custom_code
 description: This is my custom code for flutter
-version: 1.0.1
+version: 1.0.3
 repository: https://github.com/phydrogen/trp_custom_code
 
 environment:
@@ -11,7 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
   dropdown_button2: ^2.3.9
-  google_fonts: ^6.2.1
+  google_fonts: ^6.1.0
   # path: ^1.8.0
 
 dev_dependencies:

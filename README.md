@@ -18,5 +18,7 @@ For help getting started with Flutter, view our
 samples, guidance on mobile development, and a full API reference.
 
 
-# Version
+## Version
+1.0.3: exposed the FormFieldController and CustomDropDown
+1.0.2: lower the version of google fonts
 1.0.1: upgrade the sdk of flutter

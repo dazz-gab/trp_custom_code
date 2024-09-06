@@ -1,10 +1,10 @@
 name: trp_custom_code
 description: This is my custom code for flutter
-version: 1.0.0
+version: 1.0.1
 repository: https://github.com/phydrogen/trp_custom_code
 
 environment:
-  sdk: ^3.6.0-149.3.beta
+  sdk: ">=3.1.0 <4.0.0"
 
 # Add regular dependencies here.
 dependencies:

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:google_fonts/google_fonts.dart';
 import './form_field_controller.dart';
+import 'package:trp_custom_code/arrow_down_icons.dart';
 
 class CustomDropDown<T> extends StatefulWidget {
   CustomDropDown({
@@ -47,8 +48,8 @@ class CustomDropDown<T> extends StatefulWidget {
   final Function(T?)? onChanged;
   final Function(List<T>?)? onMultiSelectChanged;
   final Widget icon = const Icon(
-    Icons.keyboard_arrow_down_rounded,
-    color: Color(0xFF966B4D),
+    ArrowDown.arrow_down_v2,
+    color: Colors.white,
     size: 24.0,
   );
   final double? width;
@@ -56,14 +57,14 @@ class CustomDropDown<T> extends StatefulWidget {
   final double? maxHeight;
   final Color? fillColor;
   final TextStyle searchHintTextStyle = GoogleFonts.getFont(
-    'Inter',
-    color: const Color(0xFF744422),
+    'Poppins',
+    color: Colors.white,
     fontWeight: FontWeight.bold,
     fontSize: 13.0,
   );
   final TextStyle? searchTextStyle = GoogleFonts.getFont(
-    'Inter',
-    color: const Color(0xFF744422),
+    'Poppins',
+    color: Colors.white,
     fontWeight: FontWeight.bold,
     fontSize: 16.0,
   );
@@ -140,7 +141,7 @@ class _CustomDropDownState<T> extends State<CustomDropDown<T>> {
     super.initState();
     _textStyle = widget.labelTextStyle ??
         GoogleFonts.getFont(
-        'Inter',
+        'Poppins',
         color: const Color(0xFF744422),
         fontWeight: FontWeight.normal,
         fontSize: 12.0,
@@ -286,8 +287,8 @@ class _CustomDropDownState<T> extends State<CustomDropDown<T>> {
       .toList();
 
   Widget _buildDropdown() {
-    final overlayColor = MaterialStateProperty.resolveWith<Color?>((states) =>
-        states.contains(MaterialState.focused) ? Colors.transparent : null);
+    final overlayColor = WidgetStateProperty.resolveWith<Color?>((states) =>
+        states.contains(WidgetState.focused) ? Colors.transparent : null);
     final iconStyleData = IconStyleData(icon: widget.icon);
     return DropdownButton2<T>(
       value: currentValue,

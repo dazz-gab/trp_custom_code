@@ -1,6 +1,6 @@
 name: trp_custom_code
 description: This is my custom code for flutter
-version: 1.0.3
+version: 1.0.4
 repository: https://github.com/phydrogen/trp_custom_code
 
 environment:
@@ -17,3 +17,9 @@ dependencies:
 dev_dependencies:
   lints: ^4.0.0
   test: ^1.24.0
+
+flutter:
+  fonts:
+  - family:  ArrowDown
+    fonts:
+      - asset: fonts/ArrowDown.ttf

@@ -19,6 +19,7 @@ samples, guidance on mobile development, and a full API reference.
 
 
 ## Version
+1.0.4: added new icon, color and changed font
 1.0.3: exposed the FormFieldController and CustomDropDown
 1.0.2: lower the version of google fonts
 1.0.1: upgrade the sdk of flutter
